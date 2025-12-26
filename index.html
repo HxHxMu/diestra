@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diestra — Latin Alternative Rock Duo (Luis E. Bonilla, Ricardo Bonilla)</title>
+    <meta name="description" content="Canonical archival reference for Diestra, a Latin alternative rock duo formed by brothers Luis E. Bonilla and Ricardo Bonilla in Atlanta, Georgia in the early 2000s.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #dc2626;
+            --text-primary: #1a1a1a;
+            --text-secondary: #666;
+            --border: #e5e5e5;
+            --bg-light: #f8f9fa;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background: #fff;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+            z-index: 100;
+        }
+
+        .header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-secondary);
+            margin-left: 2rem;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
+
+        .section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 5rem 2rem;
+        }
+
+        .hero {
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+        }
+
+        .subtitle {
+            font-size: 1.3rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            max-width: 800px;
+        }
+
+        .archive-notice {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: var(--bg-light);
+            border-left: 3px solid var(--primary);
+            margin: 2rem 0;
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            font-weight: 600;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+            font-weight: 600;
+        }
+
+        .content {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            max-width: 800px;
+            margin-bottom: 2rem;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+            padding: 2rem;
+            background: var(--bg-light);
+            border-radius: 8px;
+        }
+
+        .info-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .info-label {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .info-value {
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        .bullets {
+            list-style: none;
+            margin: 1.5rem 0;
+        }
+
+        .bullets li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .bullets li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: bold;
+        }
+
+        .reference-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .reference-link {
+            display: block;
+            padding: 1.5rem;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            text-decoration: none;
+            color: var(--text-primary);
+            transition: all 0.2s;
+        }
+
+        .reference-link:hover {
+            border-color: var(--primary);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            transform: translateY(-2px);
+        }
+
+        .reference-link-title {
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .reference-link-desc {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        footer {
+            background: var(--bg-light);
+            padding: 3rem 2rem;
+            border-top: 1px solid var(--border);
+            margin-top: 4rem;
+        }
+
+        .footer-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-links {
+            margin-top: 1rem;
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .subtitle {
+                font-size: 1.1rem;
+            }
+
+            nav {
+                display: none;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .reference-links {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <div class="logo">Diestra</div>
+            <nav>
+                <a href="#overview">Overview</a>
+                <a href="#musical-identity">Musical Identity</a>
+                <a href="#context">Context</a>
+                <a href="#references">References</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section hero">
+        <h1>Diestra</h1>
+        <div class="subtitle">
+            Diestra is a Latin alternative rock duo formed by brothers Luis E. Bonilla and Ricardo Bonilla in Atlanta, Georgia. Emerging in the early 2000s, the project blended Latin musical sensibilities with alternative rock, aligning with the rise of Rock en Español in the United States.
+        </div>
+        <div class="content">
+            The duo became known for melodic guitar-driven arrangements, bilingual songwriting (Spanish/English), and experimental production approaches that bridged Latin and alternative music audiences within the American indie landscape.
+        </div>
+        <div class="archive-notice">
+            This page is the canonical archival reference for Diestra.
+        </div>
+    </section>
+
+    <section class="section" id="overview">
+        <h2>Overview</h2>
+        <div class="info-grid">
+            <div class="info-item">
+                <div class="info-label">Type</div>
+                <div class="info-value">Duo</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">Members</div>
+                <div class="info-value">Luis E. Bonilla<br>Ricardo Bonilla</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">Origin</div>
+                <div class="info-value">Atlanta, Georgia, USA</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">Era</div>
+                <div class="info-value">Early 2000s</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">Status</div>
+                <div class="info-value">Inactive / archived project</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="musical-identity">
+        <h2>Musical Identity</h2>
+        <div class="content">
+            Diestra's sound sits at the intersection of Latin alternative rock and American alternative traditions. The project emphasizes melody, rhythmic nuance, and lyrical fluidity across languages, avoiding metal conventions in favor of song-forward structures and textural experimentation.
+        </div>
+    </section>
+
+    <section class="section" id="context">
+        <h2>Cultural Context</h2>
+        <div class="content">
+            Diestra formed during a period when Rock en Español and Latin alternative acts were gaining visibility in the U.S. independent circuit. The project reflects a transitional era prior to streaming dominance, when regional scenes, live performance, and physical/digital hybrids defined artist development.
+        </div>
+    </section>
+
+    <section class="section" id="catalog">
+        <h2>Catalog and Documentation</h2>
+        <div class="content">
+            Official releases, credits, and identifiers are maintained in external music databases. These sources constitute the authoritative public record for Diestra's discography and metadata.
+        </div>
+    </section>
+
+    <section class="section" id="references">
+        <h2>External References</h2>
+        <div class="reference-links">
+            <a href="https://musicbrainz.org/artist/2b25addc-f2dd-4e3f-8044-f62f23ae3a97" target="_blank" class="reference-link">
+                <div class="reference-link-title">MusicBrainz</div>
+                <div class="reference-link-desc">Authoritative music metadata database</div>
+            </a>
+            <a href="https://www.discogs.com/artist/15720846-Diestra" target="_blank" class="reference-link">
+                <div class="reference-link-title">Discogs</div>
+                <div class="reference-link-desc">Release catalog and credits</div>
+            </a>
+            <a href="https://www.wikidata.org/wiki/Q137177467" target="_blank" class="reference-link">
+                <div class="reference-link-title">Wikidata</div>
+                <div class="reference-link-desc">Structured knowledge graph entity</div>
+            </a>
+            <a href="https://www.youtube.com/@diestraHQ" target="_blank" class="reference-link">
+                <div class="reference-link-title">YouTube</div>
+                <div class="reference-link-desc">Official audio / topic channel</div>
+            </a>
+            <a href="https://open.spotify.com/artist/0H1cVM9pIEGYWCJMCK0yM0" target="_blank" class="reference-link">
+                <div class="reference-link-title">Spotify</div>
+                <div class="reference-link-desc">Streaming catalog</div>
+            </a>
+        </div>
+    </section>
+
+    <section class="section" id="attribution">
+        <h2>Rights and Attribution</h2>
+        <div class="content">
+            Diestra is credited as a duo project by Luis E. Bonilla and Ricardo Bonilla. This site exists for reference, attribution, and identity-graph continuity only. No current activity or promotion.
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-inner">
+            <div>© Diestra (Luis E. Bonilla, Ricardo Bonilla)</div>
+            <div style="margin-top: 0.5rem; color: var(--text-secondary); font-size: 0.9rem;">
+                Canonical archival reference page for attribution and identity verification.
+            </div>
+            <div class="footer-links">
+                <a href="https://musicbrainz.org/artist/2b25addc-f2dd-4e3f-8044-f62f23ae3a97" target="_blank">MusicBrainz</a>
+                <a href="https://www.discogs.com/artist/15720846-Diestra" target="_blank">Discogs</a>
+                <a href="https://www.wikidata.org/wiki/Q137177467" target="_blank">Wikidata</a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MusicGroup",
+      "name": "Diestra",
+      "alternateName": ["Diestra (Latin alternative rock duo)"],
+      "genre": [
+        "Latin alternative rock",
+        "Rock en Español",
+        "Alternative rock"
+      ],
+      "foundingLocation": {
+        "@type": "Place",
+        "name": "Atlanta, Georgia, United States"
+      },
+      "member": [
+        {
+          "@type": "Person",
+          "name": "Luis E. Bonilla",
+          "sameAs": "https://leb.hxhxm.com/"
+        },
+        {
+          "@type": "Person",
+          "name": "Ricardo Bonilla"
+        }
+      ],
+      "foundingDate": "2000",
+      "dissolutionDate": "2010",
+      "sameAs": [
+        "https://musicbrainz.org/artist/2b25addc-f2dd-4e3f-8044-f62f23ae3a97",
+        "https://www.discogs.com/artist/15720846-Diestra",
+        "https://www.wikidata.org/wiki/Q137177467",
+        "https://www.youtube.com/@diestraHQ",
+        "https://open.spotify.com/artist/0H1cVM9pIEGYWCJMCK0yM0"
+      ]
+    }
+    </script>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
